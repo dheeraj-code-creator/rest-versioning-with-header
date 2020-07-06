@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.stereotype.Service;
 
 import com.springboot.rest.dto.AirCraftDto;
@@ -346,5 +345,9 @@ public class UserService {
 		user1.setUserName("First User");
 		user1.setProductDto(productDtos);
 		return user1;
+	}
+
+	public String getGreeting() {
+		return "this version 2 API";
 	}
 }
